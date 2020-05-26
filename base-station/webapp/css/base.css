@@ -1,0 +1,104 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+div {
+  position: relative;
+  box-sizing: border-box;
+}
+
+#uploaded {
+  width: 64%;
+  margin: 5em auto 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  #uploaded {
+    width: 90vw;
+    margin-top: 9em;
+  }
+}
+
+  #uploaded > .header {
+    position: absolute;
+    width: 100%;
+    top: -4.5em;
+    padding: 1em;
+    text-align: center;
+    border-bottom: 2px solid #eee;
+  }
+
+  @media only screen and (max-width: 768px) {
+    #uploaded > .header {
+      top: -9em;
+    }
+  }
+
+    #uploaded > .header > .title {
+
+      font-weight: 900;
+      font-size: 1.25em;
+      line-height: .75em;
+      letter-spacing: -1px;
+    }
+
+    #uploaded > .header > .attribution {
+
+      float: left;
+    }
+
+    #uploaded > .header > .launch-btn {
+
+      float: right;
+    }
+
+    @media only screen and (max-width: 768px) {
+      #uploaded > .header > .title,
+      #uploaded > .header > .launch-btn,
+      #uploaded > .header > .attribution {
+        width: 100%;
+        padding: .5em;
+        box-sizing: border-box;
+      }
+    }
+
+  #uploaded > .upload {
+    float: left;
+    margin: 0 2vw 2vw 0;
+    display: inline-block;
+  }
+
+    #uploaded > .upload > img {
+      width: 19vw;
+      transition: width 1s ease-in-out, height 1s ease-in-out;
+    }
+
+    #uploaded > .upload:first-of-type > img {
+      width: 40vw;
+      margin-right: 0;
+    }
+
+    @media only screen and (max-width: 768px) {
+      #uploaded > .upload {
+        margin: 0 0 5vh 0;
+      }
+
+      #uploaded > .upload > img,
+      #uploaded > .upload:first-of-type > img {
+        width: 90vw;
+      }
+    }
+
+  #uploaded > .footer {
+
+    background-color: #eee;
+    color: #bbb;
+    padding: 1em;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 1em;
+  }

@@ -1,0 +1,20 @@
+{
+  "name": "workshop-base-station",
+  "version": "1.0.0",
+  "description": "TorontoJS Workshop Base Station",
+  "main": "base-station.js",
+  "scripts": {
+    "start": "node base-station.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cjs-task": "^0.2.0",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "fs-extra": "^3.0.1",
+    "socket.io": "^2.0.3",
+    "supe": "^0.1.1"
+  }
+}
