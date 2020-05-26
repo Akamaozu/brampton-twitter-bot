@@ -6,9 +6,6 @@ var path = require('path'),
       duration: process.env.CITIZEN_REVIVE_DURATION_MINS
     });
 
-// load helpers to make supervising components easier
-  supervisor.use( require( './utils/supervisor/prefix-output-with-timestamp' ) );
-
 // register satellite component control code
   supervisor.register( 'brain', path.join( __dirname, '/components/brain.js' ) );
   supervisor.register( 'camera', path.join( __dirname, '/components/camera.js' ) );
