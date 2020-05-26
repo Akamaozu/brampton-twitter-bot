@@ -1,5 +1,7 @@
 var citizen = require('supe'),
-    socketio = require('socket.io-client')( 'https://torontojs-basestation.herokuapp.com/' ),
+    base_station_url = process.env.SATELLITE_BASE_STATION_URL,
+    socketio = require('socket.io-client')( base_station_url ),
+    satellite_name = process.env.SATELLITE_NAME,
     verbose = process.env.ANTENNA_VERBOSE_LOGGING == 'true' || false;
 
 socketio.emit( 'connection-status-request' );
@@ -10,7 +12,7 @@ socketio.on( 'connect', function(){
 
 socketio.on( 'connection-status', function( is_connected ){
 
-  if( verbose ){    
+  if( verbose ){
     if( is_connected ) console.log( 'connected to base station' );
     else console.log( 'disconnected from base station' );
   }

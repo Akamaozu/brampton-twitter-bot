@@ -1,4 +1,4 @@
-var socket = io( 'https://torontojs-basestation.herokuapp.com/' ),
+var socket = io( window.base_station_url ),
     viewport = document.getElementById( 'uploaded' ),
     uploads = 0;
 
