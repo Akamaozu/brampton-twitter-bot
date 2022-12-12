@@ -26,7 +26,7 @@
   "dependencies": {
     "cjs-task": "^2.3.0",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "fs-extra": "^9.0.0",
     "request": "^2.88.2",
     "socket.io": "^2.3.0",
